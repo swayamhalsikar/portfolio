@@ -1915,3 +1915,68 @@ gap:10px;
 }
 
 }
+
+/* ===== FINAL MOBILE FIX ===== */
+
+@media (max-width:768px){
+
+/* FIX PAGE WIDTH */
+body{
+overflow-x:hidden;
+}
+
+/* HERO SECTION */
+.hero{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+width:100%;
+padding:40px 20px;
+}
+
+/* TEXT AREA */
+.hero-text{
+width:100%;
+}
+
+/* IMAGE AREA */
+.hero-image{
+position:relative;
+width:100%;
+display:flex;
+justify-content:center;
+margin-top:30px;
+}
+
+/* PROFILE IMAGE */
+.hero-image img{
+width:70%;
+max-width:240px;
+height:auto;
+}
+
+/* STATS GRID */
+.stats{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-top:25px;
+}
+
+/* BUTTONS */
+.buttons{
+display:flex;
+flex-direction:column;
+gap:10px;
+align-items:center;
+}
+
+/* NAVBAR */
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
+
+}
