@@ -1842,51 +1842,68 @@ scroll-behavior:smooth;
 transition-property: transform, opacity;
 }
 
-/* ================= MOBILE RESPONSIVE ================= */
+
+
+/* ===== MOBILE RESPONSIVE FIX ===== */
 
 @media (max-width:768px){
 
-.navbar{
-flex-direction:column;
-padding:15px;
-}
-
-.nav-links{
-flex-wrap:wrap;
-gap:10px;
-justify-content:center;
-}
-
+/* HERO SECTION */
 .hero{
 flex-direction:column;
+align-items:center;
 text-align:center;
 padding:40px 20px;
 }
 
-.hero-image img{
-width:85%;
-max-width:280px;
+.hero-text{
+width:100%;
 }
 
+.hero-image{
+width:100%;
+margin-top:30px;
+display:flex;
+justify-content:center;
+}
+
+.hero-image img{
+width:80%;
+max-width:260px;
+}
+
+/* BADGES */
+.badges{
+justify-content:center;
+flex-wrap:wrap;
+gap:8px;
+}
+
+/* BUTTONS */
+.buttons{
+flex-direction:column;
+gap:12px;
+align-items:center;
+}
+
+/* STATS GRID */
 .stats{
+display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:15px;
+margin-top:25px;
 }
 
-.stat-card{
-padding:18px;
+/* NAVBAR */
+.navbar{
+flex-direction:column;
+gap:12px;
 }
 
-.projects-container{
-grid-template-columns:1fr;
-}
-
-.skills-grid{
-grid-template-columns:1fr;
-}
-
-.offer-container{
-grid-template-columns:1fr;
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
 }
 
 }
