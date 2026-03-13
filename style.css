@@ -1,3 +1,8 @@
+html, body{
+width:100%;
+overflow-x:hidden;
+}
+
 /* SCROLL PROGRESS BAR */
 
 #progress-bar{
@@ -91,12 +96,12 @@ position:relative;
 .hero::before{
 content:"";
 position:absolute;
-width:500px;
-height:500px;
+width:300px;
+height:300px;
 background:radial-gradient(circle,#38bdf8,transparent);
 filter:blur(150px);
 top:150px;
-right:200px;
+right:0;
 z-index:-1;
 }
 
@@ -1933,6 +1938,19 @@ align-items:center;
 text-align:center;
 width:100%;
 padding:40px 20px;
+}
+
+/* REMOVE FLOATING BADGES ON MOBILE */
+
+.badge-top,
+.badge-bottom,
+.photo-badge,
+.photo-card{
+display:none;
+}
+
+.tech-icons{
+display:none;
 }
 
 /* TEXT AREA */
