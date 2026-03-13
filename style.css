@@ -1998,3 +1998,56 @@ gap:10px;
 }
 
 }
+
+/* FIX JOURNEY QUOTE */
+
+.journey-quote{
+padding:30px 20px;
+}
+
+.journey-quote p{
+font-size:18px;
+line-height:1.6;
+}
+
+/* FIX EDUCATION TIMELINE */
+
+.timeline::before{
+left:20px;
+}
+
+.timeline-item{
+width:100%;
+padding-left:60px;
+padding-right:20px;
+}
+
+.timeline-item.left,
+.timeline-item.right{
+left:0;
+text-align:left;
+}
+
+.timeline-item::after{
+left:11px;
+}
+
+/* FIX EXPERIENCE */
+
+.exp-grid{
+grid-template-columns:1fr;
+}
+
+.exp-resp ul{
+grid-template-columns:1fr;
+}
+
+.experience-card{
+padding:25px;
+}
+
+/* FIX CONTACT SECTION */
+
+.connect-container{
+grid-template-columns:1fr;
+}
