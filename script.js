@@ -64,3 +64,7 @@ let scrolled = (scrollTop / height) * 100;
 document.getElementById("progress-bar").style.width = scrolled + "%";
 
 };
+
+window.addEventListener("resize", () => {
+document.body.style.width = window.innerWidth + "px";
+});
